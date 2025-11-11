@@ -1,0 +1,270 @@
+@import './layouts/sidebar.css';
+@import './layouts/header.css';
+@import './theme/default-colors.css';
+@import './override/reboot.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@theme {
+  --color-*: initial;
+  --color-white: #fff;
+  --color-purple: #3f3cbb;
+  --color-midnight: #121063;
+  --color-tahiti: #3ab7bf;
+  --color-bermuda: #78dcca;
+}
+
+:root {
+  --background: 210.0000 40.0000% 98.0392%;
+  --foreground: 217.2414 32.5843% 17.4510%;
+  --card: 0 0% 100%;
+  --card-foreground: 217.2414 32.5843% 17.4510%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 217.2414 32.5843% 17.4510%;
+  --primary: 10.4348 97.1831% 58.2353%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 220 13.0435% 90.9804%;
+  --secondary-foreground: 216.9231 19.1176% 26.6667%;
+  --muted: 220.0000 14.2857% 95.8824%;
+  --muted-foreground: 220 8.9362% 46.0784%;
+  --accent: 0 0% 94.9020%;
+  --accent-foreground: 216.9231 19.1176% 26.6667%;
+  --destructive: 0 84.2365% 60.1961%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 0 0% 89.0196%;
+  --input: 216.0000 12.1951% 83.9216%;
+  --ring: 10.4348 97.1831% 58.2353%;
+  --chart-1: 238.7324 83.5294% 66.6667%;
+  --chart-2: 243.3962 75.3555% 58.6275%;
+  --chart-3: 244.5205 57.9365% 50.5882%;
+  --chart-4: 243.6522 54.5024% 41.3725%;
+  --chart-5: 242.1687 47.4286% 34.3137%;
+  --sidebar: 240 20.0000% 98.0392%;
+  --sidebar-foreground: 217.2414 32.5843% 17.4510%;
+  --sidebar-primary: 10.4348 97.1831% 58.2353%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 10.4348 97.1831% 58.2353%;
+  --sidebar-accent-foreground: 0 0% 100%;
+  --sidebar-border: 216.0000 12.1951% 83.9216%;
+  --sidebar-ring: 10.4348 97.1831% 58.2353%;
+  /*--font-sans: Inter, sans-serif;
+  --font-serif: Merriweather, serif;
+  --font-mono: JetBrains Mono, monospace;*/
+  --radius: 0.5rem;
+  --shadow-2xs: 0px 4px 8px -1px hsl(0 0% 10.1961% / 0.05);
+  --shadow-xs: 0px 4px 8px -1px hsl(0 0% 10.1961% / 0.05);
+  --shadow-sm: 0px 4px 8px -1px hsl(0 0% 10.1961% / 0.10), 0px 1px 2px -2px hsl(0 0% 10.1961% / 0.10);
+  --shadow: 0px 4px 8px -1px hsl(0 0% 10.1961% / 0.10), 0px 1px 2px -2px hsl(0 0% 10.1961% / 0.10);
+  --shadow-md: 0px 4px 8px -1px hsl(0 0% 10.1961% / 0.10), 0px 2px 4px -2px hsl(0 0% 10.1961% / 0.10);
+  --shadow-lg: 0px 4px 8px -1px hsl(0 0% 10.1961% / 0.10), 0px 4px 6px -2px hsl(0 0% 10.1961% / 0.10);
+  --shadow-xl: 0px 4px 8px -1px hsl(0 0% 10.1961% / 0.10), 0px 8px 10px -2px hsl(0 0% 10.1961% / 0.10);
+  --shadow-2xl: 0px 4px 8px -1px hsl(0 0% 10.1961% / 0.25);
+  --spacing: 0.26rem;
+}
+
+.dark {
+  --background: 222.2222 47.3684% 11.1765%;
+  --foreground: 214.2857 31.8182% 91.3725%;
+  --card: 217.2414 32.5843% 17.4510%;
+  --card-foreground: 214.2857 31.8182% 91.3725%;
+  --popover: 217.2414 32.5843% 17.4510%;
+  --popover-foreground: 214.2857 31.8182% 91.3725%;
+  --primary: 234.4538 89.4737% 73.9216%;
+  --primary-foreground: 222.2222 47.3684% 11.1765%;
+  --secondary: 217.7778 23.0769% 22.9412%;
+  --secondary-foreground: 216.0000 12.1951% 83.9216%;
+  --muted: 217.2414 32.5843% 17.4510%;
+  --muted-foreground: 217.8947 10.6145% 64.9020%;
+  --accent: 216.9231 19.1176% 26.6667%;
+  --accent-foreground: 216.0000 12.1951% 83.9216%;
+  --destructive: 0 84.2365% 60.1961%;
+  --destructive-foreground: 222.2222 47.3684% 11.1765%;
+  --border: 215 13.7931% 34.1176%;
+  --input: 215 13.7931% 34.1176%;
+  --ring: 234.4538 89.4737% 73.9216%;
+  --chart-1: 234.4538 89.4737% 73.9216%;
+  --chart-2: 238.7324 83.5294% 66.6667%;
+  --chart-3: 243.3962 75.3555% 58.6275%;
+  --chart-4: 244.5205 57.9365% 50.5882%;
+  --chart-5: 243.6522 54.5024% 41.3725%;
+  --sidebar: 217.2414 32.5843% 17.4510%;
+  --sidebar-foreground: 214.2857 31.8182% 91.3725%;
+  --sidebar-primary: 234.4538 89.4737% 73.9216%;
+  --sidebar-primary-foreground: 222.2222 47.3684% 11.1765%;
+  --sidebar-accent: 216.9231 19.1176% 26.6667%;
+  --sidebar-accent-foreground: 216.0000 12.1951% 83.9216%;
+  --sidebar-border: 215 13.7931% 34.1176%;
+  --sidebar-ring: 234.4538 89.4737% 73.9216%;
+  /*--font-sans: Inter, sans-serif;
+  --font-serif: Merriweather, serif;
+  --font-mono: JetBrains Mono, monospace;*/
+  --radius: 0.5rem;
+  --shadow-2xs: 0px 4px 8px -1px hsl(0 0% 10.1961% / 0.05);
+  --shadow-xs: 0px 4px 8px -1px hsl(0 0% 10.1961% / 0.05);
+  --shadow-sm: 0px 4px 8px -1px hsl(0 0% 10.1961% / 0.10), 0px 1px 2px -2px hsl(0 0% 10.1961% / 0.10);
+  --shadow: 0px 4px 8px -1px hsl(0 0% 10.1961% / 0.10), 0px 1px 2px -2px hsl(0 0% 10.1961% / 0.10);
+  --shadow-md: 0px 4px 8px -1px hsl(0 0% 10.1961% / 0.10), 0px 2px 4px -2px hsl(0 0% 10.1961% / 0.10);
+  --shadow-lg: 0px 4px 8px -1px hsl(0 0% 10.1961% / 0.10), 0px 4px 6px -2px hsl(0 0% 10.1961% / 0.10);
+  --shadow-xl: 0px 4px 8px -1px hsl(0 0% 10.1961% / 0.10), 0px 8px 10px -2px hsl(0 0% 10.1961% / 0.10);
+  --shadow-2xl: 0px 4px 8px -1px hsl(0 0% 10.1961% / 0.25);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-[1200px];
+  }
+
+  body {
+    @apply text-sm overflow-x-hidden;
+  }
+
+  .dropdown {
+    @apply shadow-md bg-white relative rounded-sm;
+  }
+
+  .card-title {
+    @apply text-lg font-semibold text-dark
+  }
+
+  .card-subtitle {
+    @apply text-sm font-medium text-darklink
+  }
+
+  body {
+    @apply text-darklink;
+  }
+
+  /*heading text color*/
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-dark font-semibold;
+  }
+
+  .border-ld {
+    @apply border-border;
+  }
+
+  .form-control input {
+    @apply border border-border bg-transparent w-full text-sm;
+  }
+
+  .form-control-rounded input {
+    @apply rounded-3xl border border-border bg-transparent w-full text-sm;
+  }
+
+  .form-control-rounded input:focus {
+    @apply border-primary outline-none shadow-none ring-offset-0 ring-transparent;
+  }
+
+
+  .form-control input:focus {
+    @apply border-primary outline-none shadow-none ring-offset-0 ring-transparent;
+  }
+
+  .form-control-input {
+    @apply rounded-md border border-border bg-transparent w-full text-sm;
+  }
+
+  .form-control-input:focus {
+    @apply border-primary outline-none shadow-none ring-offset-0 ring-transparent;
+  }
+
+  .form-rounded-md input {
+    @apply rounded-md border border-border bg-transparent w-full text-sm;
+  }
+
+  .form-rounded-md input:focus {
+    @apply border-primary outline-none shadow-none ring-offset-0 ring-transparent;
+  }
+
+  .form-rounded input {
+    @apply rounded-full
+  }
+
+  .elipse {
+    @apply w-[18px] h-[10px]
+  }
+
+  input::placeholder {
+    @apply text-darklink
+  }
+
+  .select-option select {
+    @apply bg-muted border-0 text-darklink d py-2 ps-4 pe-9 w-auto focus:border-0 focus:ring-0 font-medium;
+  }
+
+  .select-md select {
+    @apply border-ld bg-transparent w-full text-sm rounded-md focus:border-primary focus:ring-0;
+  }
+
+  .select-rounded select {
+    @apply border-ld bg-transparent w-full text-sm rounded-full focus:border-primary focus:ring-0;
+  }
+
+  .checkbox {
+    @apply h-[18px] w-[18px] border border-border bg-transparent focus:ring-0 focus:ring-offset-0
+  }
+
+  .bg-default {
+    background-color: #ffffff;
+  }
+
+  .text-thin {
+    font-size: 0.775rem /* 14px */;
+    line-height: 1rem /* 20px */;
+  }
+
+  .bg-icon-table {
+    @apply h-9 w-9 hover:text-primary hover:bg-lightprimary rounded-full flex justify-center items-center cursor-pointer relative;
+  }
+
+  .text-label-dialog {
+    @apply inline-block mb-2;
+    color: #666666;
+  }
+  input.text-input-dialog {
+    @apply font-medium h-10 placeholder:text-gray-400;
+    color: #333333;
+  }
+
+  .text-muti-select {
+    @apply text-sm font-medium text-darklink;
+  }
+
+  /*.table {
+    @apply w-full border-collapse text-sm whitespace-nowrap;
+    thead {
+      @apply capitalize text-black text-opacity-55 font-extrabold;
+      th {
+        @apply font-medium text-sm tracking-widest text-start w-[64px] [&:not(:first-of-type):not(:last-of-type)]:p-1;
+      }
+      tbody {
+        @apply text-black;
+        th, td {
+          @apply text-sm;
+        }
+      }
+    }
+  }*/
+
+  .sidebar{
+    transition:all .2s ease-in-out;
+  }
+
+}
