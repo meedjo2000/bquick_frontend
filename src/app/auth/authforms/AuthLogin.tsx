@@ -6,7 +6,6 @@ import React from "react";
 import * as yup from 'yup';
 import { Formik, FormikValues } from "formik";
 import Loading from "@/components/loading";
-import {Input} from "@/components/ui/input";
 
 const LoginFormSchema = yup.object().shape({
     email: yup.string().required().min(2),
@@ -47,7 +46,7 @@ const AuthLogin = ({ onSubmit, sending }: ILoginFormProps) => {
                     type="email"
                     sizing="lg"
                     name="email"
-                    className="form-control form-control-rounded"
+                    className="form-control"
                     placeholder="Renseignez l'email"
                     onChange={formikProps.handleChange('email')}
                     value={formikProps.values.email.trim()}
@@ -71,7 +70,7 @@ const AuthLogin = ({ onSubmit, sending }: ILoginFormProps) => {
                     type="password"
                     name="password"
                     sizing="lg"
-                    className="form-control form-control-rounded"
+                    className="form-control"
                     placeholder="Renseignez le mot de passe"
                     onChange={formikProps.handleChange('password')}
                     value={formikProps.values.password.trim()}
@@ -107,22 +106,16 @@ const AuthLogin = ({ onSubmit, sending }: ILoginFormProps) => {
               </div>
               <Button
                   color={"primary"}
-                  /*href="/"
-                  as={Link}*/
-                  //onSubmit={() => formikProps.handleSubmit()}
                   onClick={() => formikProps.handleSubmit()}
-                  className="group relative flex items-stretch justify-center p-0.5 text-center font-medium bg-primary hover:bg-primaryemphasis text-white rounded-3xl w-full"
+                  className="group relative flex items-stretch justify-center p-0.5 text-center font-medium bg-primary hover:bg-primaryemphasis text-white rounded-xl w-full"
                   size="lg"
                   disabled={sending}
               >
-                  {sending ? <Loading className="fill-orange-500" size={4} /> : "Sign in"}
+                  {sending ? <Loading className="fill-orange-500" size={4} /> : "Se Connecter"}
               </Button>
             </>
         )}
       </Formik>
-      {/*<form>
-
-      </form>*/}
     </>
   );
 };

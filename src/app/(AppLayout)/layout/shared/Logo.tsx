@@ -2,8 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-//import LogoIcon from '/public/images/logos/logo-icon.svg';
-import LogoIcon from '/public/images/logos/logo-icon-akuaba.svg';
+import LogoIcon from '/public/images/logos/logo-icon-bquick.svg';
 
 const Logo = () => {
     return (

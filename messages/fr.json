@@ -1,4 +1,13 @@
 {
+  "Shipping": {
+    "PAGE_TITLE": "Mes expéditions",
+    "BREADCRUMB_TITLE": "Expéditions",
+    "SHIPPING_ADD_SUCCESS": "Expédition ajoutée avec succès",
+    "SHIPPING_UPDATE_SUCCESS": "Expédition modifiée avec succès",
+    "SHIPPING_DELETE_SUCCESS": "Expédition(s) supprimée(s) avec succès",
+    "SHIPPING_ADD_MODAL_TITLE": "Ajouter un shipping",
+    "SHIPPING_EDIT_MODAL_TITLE": "Modifier le shipping"
+  },
   "Personal": {
     "NO_ITEM_DELETE": "Sélectionnez au moins un employé à supprimer",
     "EMPLOYEE_DELETE_SUCCESS": "Employé(s) supprimé(s) avec succès",

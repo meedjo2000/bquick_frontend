@@ -39,19 +39,79 @@ const SidebarContent: MenuItem[] = [
   },
   {
     isPro: true,
+    heading: "Mes expeditions",
+    children: [
+      {
+        name: "Mes expeditions",
+        icon: "solar:delivery-linear",
+        id: uniqueId(),
+        url: "/shipping/list",
+      },
+    ],
+  },
+  {
+    heading: "Factures",
+    isPro: false,
+    children: [
+      {
+        name: "Factures",
+        icon: "solar:plate-linear",
+        id: uniqueId(),
+        url: "/thing/list",
+      },
+    ],
+  },
+  {
+    heading: "Clients",
+    isPro: false,
+    children: [
+      {
+        name: "Clients",
+        icon: "solar:users-group-rounded-linear",
+        id: uniqueId(),
+        url: "/personal/list",
+      },
+    ],
+  },
+  {
+    heading: "Equipe",
+    isPro: false,
+    children: [
+      {
+        name: "Equipe",
+        icon: "solar:users-group-two-rounded-linear",
+        id: uniqueId(),
+        url: "/personal/list",
+      },
+    ],
+  },
+  {
+    heading: "Securité",
+    isPro: false,
+    children: [
+      {
+        id: uniqueId(),
+        name: "Sécurité",
+        icon: "solar:shield-warning-linear",
+        url: "/security/list",
+      },
+    ],
+  },
+  {
+    isPro: true,
     heading: "Configuration",
     children: [
       {
         name: "Configuration",
         id: uniqueId(),
-        icon: "solar:home-angle-linear",
+        icon: "solar:settings-linear",
         children: [
           {
-            name: "Type de visit-type",
+            name: "Type d'article",
             id: uniqueId(),
             url: "/config/visit-type/list",
           },
-          {
+          /*{
             name: "Direction",
             id: uniqueId(),
             url: "/config/direction/list",
@@ -65,56 +125,8 @@ const SidebarContent: MenuItem[] = [
             name: "Type d'objet",
             id: uniqueId(),
             url: "/config/thing-type/list",
-          },
+          },*/
         ],
-      },
-    ],
-  },
-  {
-    isPro: true,
-    heading: "Visite",
-    children: [
-      {
-        name: "Visite",
-        icon: "solar:notebook-outline",
-        id: uniqueId(),
-        url: "/visitor/list",
-      },
-    ],
-  },
-  {
-    heading: "Employé",
-    isPro: false,
-    children: [
-      {
-        name: "Employé",
-        icon: "solar:users-group-two-rounded-linear",
-        id: uniqueId(),
-        url: "/personal/list",
-      },
-    ],
-  },
-  {
-    heading: "Objet oublié",
-    isPro: false,
-    children: [
-      {
-        name: "Objet oublié",
-        icon: "solar:plate-linear",
-        id: uniqueId(),
-        url: "/thing/list",
-      },
-    ],
-  },
-  {
-    heading: "Securité",
-    isPro: false,
-    children: [
-      {
-        id: uniqueId(),
-        name: "Sécurité",
-        icon: "solar:shield-warning-linear",
-        url: "/security/list",
       },
     ],
   },

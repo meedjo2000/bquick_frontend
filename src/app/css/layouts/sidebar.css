@@ -111,7 +111,7 @@
     }
 
     [data-sidebar-type="mini-sidebar"] .profile-menu {
-        padding-left: 0px;
+        padding-left: 0;
     }
 
     [data-sidebar-type="mini-sidebar"] .menu-sidebar:hover .profile-menu {

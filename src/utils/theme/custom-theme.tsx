@@ -60,7 +60,7 @@ const customTheme = {
         head: {
             base: "group/head text-sm font-medium capitalize text-dark dark:text-white border-b border-ld",
             cell: {
-                base: "font-semibold px-4 py-4   dark:bg-transparent",
+                base: "font-semibold px-4 py-4 dark:bg-transparent",
             },
         },
         body: {

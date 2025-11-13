@@ -23,7 +23,7 @@ const page = () => {
                         </div>
                     </div>
                 </div>
-                <div className="lg:col-span-8 col-span-12">
+                {/*<div className="lg:col-span-8 col-span-12">
                     <PopularProducts />
                 </div>
                 <div className="lg:col-span-4 col-span-12">
@@ -31,7 +31,7 @@ const page = () => {
                 </div>
                 <div className="col-span-12">
                     <BlogCards />
-                </div>
+                </div>*/}
             </div>
         </>
     );

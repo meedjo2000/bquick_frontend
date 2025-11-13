@@ -1,0 +1,10 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 30" width="45" height="30">
+	<defs>
+		<image  width="45" height="30" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAeAQMAAACCOgXaAAAAAXNSR0IB2cksfwAAAANQTFRF////p8QbyAAAAA9JREFUeJxjZAADxuFDAQANiQAf4MstnwAAAABJRU5ErkJggg=="/>
+		<image  width="34" height="30" id="img2" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAeCAMAAAB+ITwmAAAAAXNSR0IB2cksfwAAAgRQTFRF/////qyC/VcF/VcE/V0M/oVJ/9bB//7+///+/qR3/lcE/VgF/Wcc/s20/+zi/oRH/Wsi/Woh/Wsh/Wke/WIU/VgG/WMW/smu//fy/+7m/+7l/+3j/97O/qd7/WYa/XAq//Tv/uHS/Wwj/lgF/rWQ//38//v5//79/8Ol/VwL/ns6//n2/9bC/oJF/ng2/ng1/nk1/nk2/Xg2/opR/93M//fz/n08/WMV/+TX/nw7/oNG/ppo/VsK/9rH//Xw/XMu/Xk3/p1s/VoJ/9nG/sKj/mYa/XIt/sqv//r3/oRI/WAS/+LT//Ps//Ls//n1/9O+/V8R/nQv//bx//Dp/no4//z7//j0//r4//n3//Hq/sKk/nUx/WUa/+3k/+vi/ptq/o1W/tC5/olP/YNG/oRG/oFD/XIs/V0N/pBa/m0l/Wkf/rSP//z6/oVK/WYb//Tu/+rf/VwM/syz/9vJ/n49/nMt/7qY/m8o/WET/lgG/8uy/+vg/+rg/+ne/qJ0/WQY/VgE/9/P/reT//39/sGi/VsL/nw8/oZK/X08/Xw8/o5W/+XY/X09/oVI/ppn//Xv/p1t/9jG/76f/WQX/mQX/XEq/8es/oZJ/+HS//by/tXA/WAR/nMu//Xx//Lr/qV4//37/ser/Xg1/WUY/+zj/YRI/V0O/rON/6+H/rGL//v6/W0mUJNVgQAAAjZJREFUeJx9k11IFFEUx///XWGGgl62h2XpoYd0NcUecoUetu1jySBQcWn7oBZESekbFlsIsg81pR4ysMCKiJUoiczqQQp7kSjB9cWH1i3ogywKIinKZq11urMz487OgoeZO/ee85t7zpn/HcI0ksgz1SFcaREwHTLnF4NS2vRxPp1DsEK8Q5Xq4p78Drj41YLAnZdJYz4Bq/jelt9qkocfsJofDaS4AGUKKOVreI29K7QyxNOx4ERGi6tFZAI+TqJKR3xFU4qtYcrrXkBeP44NOrKRz80+c+YfV7B5DAEdkfxv/3lTXpFdu7XRmyrlE2znU9SYfbqraEmSLfcRUMfHqLV/9DwL8QHgWUbs1CkOauPuBTP+bg15h9jDAUY4XK65SmYfQtrLaZQlgbWvUE5eJ0r+zihsHTD6PZCY8NT356cKlLEPPHLVWB7i5eMvE/nIUV4RSkc5ZNR2AcVq6J4ZnW0RDriaz4NytZ9ao8mpN0KqX03ZpsXFueXslE58nh5bSumTvT8hx7pMpCOOCOIRbRqPaPNTYtbJdnTc1pGtQXW4XsicgfM+Qhk4hhocf07D9zsFV1sWCVfHCtLI56KQuttMpS+NPCsspTKpoDeKQJ2u9MUzZ7+thHm0s+bgQezadBg1tUa5x2bsm2xrAa6xFf1LKn3zi2jrRo8FuTVijf8IO9konNyXQxoquoMIYjQ4KhZBd0/ljv1C//ZGJYfcbbIdcWHNWxjO/Y1SrMsOqIMTc33Af81SmrSA+5o7AAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="0" y="0"/>
+	<use id="Calque 1" href="#img2" x="8" y="0"/>
+</svg>
